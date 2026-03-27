@@ -46,3 +46,28 @@ https://github.com/vova3plv/Weather-Forecast-Brick/assets/156924040/af6e4d3f-f83
 
 https://github.com/vova3plv/Weather-Forecast-Brick/assets/156924040/8b3fdae4-bec9-40ea-a242-9867c8f3c550
 
+## Інструкція для розробників (Developer Onboarding)
+
+Цей посібник допоможе розгорнути проєкт на "чистій" машині macOS для подальшої розробки.
+
+### 1. Вимоги до апаратного та програмного забезпечення
+* Комп'ютер: Mac на базі процесорів Apple Silicon (M1/M2/M3) або Intel.
+* ОС: macOS Monterey (12.0) або новіша.
+* ПЗ: Xcode (завантажується безкоштовно з Mac App Store). Рекомендована версія 14.0+.
+* Обліковий запис Apple ID.
+
+### 2. Клонування репозиторію
+Відкрийте Terminal та виконайте команду:
+`git clone https://github.com/vova3plv/Weather-Forecast-Brick.git`
+`cd Weather-Forecast-Brick`
+
+### 3. Налаштування середовища розробки
+Проєкт не використовує зовнішніх залежностей (CocoaPods або SPM), оскільки базується виключно на нативних фреймворках (UIKit, URLSession).
+1. Відкрийте файл `WeatherBrick.xcodeproj` подвійним кліком.
+2. У Xcode перейдіть у налаштування (Cmd + ,) -> Accounts і додайте свій Apple ID.
+3. У навігаторі проєкту виберіть основний Target (`WeatherBrick`), перейдіть у вкладку **Signing & Capabilities** і оберіть свій Personal Team у полі Team.
+
+### 4. Запуск проєкту
+1. У верхній панелі Xcode оберіть симулятор (наприклад, iPhone 14 Pro).
+2. Натисніть кнопку **Run** (або комбінацію клавіш `Cmd + R`).
+3. Для запуску модульних тестів (XCTests) натисніть `Cmd + U`.
