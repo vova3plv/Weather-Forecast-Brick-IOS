@@ -1,0 +1,54 @@
+openapi: 3.0.0
+info:
+  title: Weather Brick API Client Specification
+  description: Специфікація API, яке використовується мобільним додатком Weather Brick для отримання даних про погоду.
+  version: 1.0.0
+servers:
+  - url: https://api.openweathermap.org/data/2.5
+    description: Основний сервер погодних даних
+paths:
+  /weather:
+    get:
+      summary: Отримати поточну погоду
+      description: Повертає погодні дані на основі географічних координат
+      parameters:
+        - in: query
+          name: lat
+          required: true
+          schema:
+            type: number
+          description: Широта
+        - in: query
+          name: lon
+          required: true
+          schema:
+            type: number
+          description: Довгота
+        - in: query
+          name: appid
+          required: true
+          schema:
+            type: string
+          description: API ключ розробника
+      responses:
+        '200':
+          description: Успішна відповідь з погодними даними
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  weather:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        main:
+                          type: string
+                          example: "Rain"
+                  main:
+                    type: object
+                    properties:
+                      temp:
+                        type: number
+                        example: 298.48
