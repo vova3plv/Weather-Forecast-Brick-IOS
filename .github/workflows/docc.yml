@@ -1,0 +1,44 @@
+name: Build and Deploy DocC
+
+on:
+  push:
+    branches: ["main"]
+
+# Надаємо права для запису в GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app
+
+      - name: Build DocC
+        run: |
+          xcodebuild docbuild -scheme WeatherBrick \
+            -destination "platform=iOS Simulator,name=iPhone 15,OS=latest" \
+            -derivedDataPath /tmp/docbuild
+
+      - name: Process DocC archive for static hosting
+        # Конвертуємо архів у формат статичного веб-сайту
+        run: |
+          $(xcrun --find docc) process-archive \
+            transform-for-static-hosting /tmp/docbuild/Build/Products/Debug-iphonesimulator/WeatherBrick.doccarchive \
+            --output-path docs_site \
+            --hosting-base-path Weather-Forecast-Brick-IOS
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: 'docs_site'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2

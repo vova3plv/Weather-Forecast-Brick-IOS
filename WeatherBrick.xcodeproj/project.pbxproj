@@ -47,6 +47,7 @@
 		9305D7EF2F76E5D100F8F9AF /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		9305D7F12F77420000F8F9AF /* linting.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = linting.md; sourceTree = "<group>"; };
 		9305D7F22F774BAD00F8F9AF /* generate_docs.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = generate_docs.md; sourceTree = "<group>"; };
+		9305D7F32F774C9F00F8F9AF /* docc.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = docc.yml; sourceTree = "<group>"; };
 		933A78622F76758C0087D9CC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		93CF05702F7676C000A0EF56 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		93EC44FD2B8221CB00A54FAF /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
@@ -126,6 +127,7 @@
 		9305D7ED2F76BDB900F8F9AF /* workflows */ = {
 			isa = PBXGroup;
 			children = (
+				9305D7F32F774C9F00F8F9AF /* docc.yml */,
 				9305D7EE2F76BDC500F8F9AF /* ios_ci.yml */,
 			);
 			path = workflows;
