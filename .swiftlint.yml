@@ -15,6 +15,7 @@ disabled_rules:
 opt_in_rules:
   - empty_count         # Рекомендує використовувати .isEmpty замість .count == 0
   - force_unwrapping    # Попереджає про використання "!" (force unwrap)
+  - missing_docs # НОВЕ: Вимагає документувати всі публічні декларації
 
 # Кастомні налаштування (наприклад, максимальна кількість рядків у функції)
 function_body_length:
