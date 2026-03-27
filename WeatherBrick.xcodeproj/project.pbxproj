@@ -45,6 +45,7 @@
 		9305D7EB2F76BD7100F8F9AF /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
 		9305D7EE2F76BDC500F8F9AF /* ios_ci.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = ios_ci.yml; sourceTree = "<group>"; };
 		9305D7EF2F76E5D100F8F9AF /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		9305D7F12F77420000F8F9AF /* linting.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = linting.md; sourceTree = "<group>"; };
 		933A78622F76758C0087D9CC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		93CF05702F7676C000A0EF56 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		93EC44FD2B8221CB00A54FAF /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
@@ -95,6 +96,7 @@
 		9305D7E42F76B7B700F8F9AF /* docs */ = {
 			isa = PBXGroup;
 			children = (
+				9305D7F12F77420000F8F9AF /* linting.md */,
 				9305D7EA2F76BD6800F8F9AF /* scripts */,
 				9305D7E72F76B99700F8F9AF /* backup.md */,
 				9305D7E62F76B94300F8F9AF /* update.md */,
