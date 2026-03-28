@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         LogManager.shared.log(.error, "Error [\(error.errorID)]: \(error.debugDescription)")
         
         // 2. Показуємо зрозумілий Alert користувачу (100%)
-        let alert = UIAlertController(
+        let alert = UIAlertController(/Users/berdenko21/Desktop/Weather-Forecast-Brick-main/README.md
             title: "Ой, халепа! (Код: \(error.errorID))",
             message: error.localizedDescription, // Дружній текст
             preferredStyle: .alert
