@@ -24,7 +24,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        LogManager.shared.log(.info, "Додаток успішно запущено")
+        LogManager.shared.log(.debug, "Початок завантаження погодних даних...")
     }
-    
-    
 }
