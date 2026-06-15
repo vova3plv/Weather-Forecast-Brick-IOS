@@ -1,9 +1,4 @@
-//
-//  Weather.swift
-//  weather-forecast-brick
-//
-//  Created by Мария Анисович on 12.08.2024.
-//
+
 
 import Foundation
 

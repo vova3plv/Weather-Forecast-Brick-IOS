@@ -1,9 +1,4 @@
-//
-//  UIColorExtension.swift
-//  weather-forecast-brick
-//
-//  Created by Мария Анисович on 08.08.2024.
-//
+
 
 import UIKit
 

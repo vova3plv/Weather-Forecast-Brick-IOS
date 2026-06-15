@@ -1,9 +1,4 @@
-//
-//  FetchCityAndCountry.swift
-//  weather-forecast-brick
-//
-//  Created by Мария Анисович on 04.09.2024.
-//
+
 
 import CoreLocation
 import Foundation

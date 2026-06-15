@@ -1,9 +1,4 @@
-//
-//  CustomAlertView.swift
-//  weather-forecast-brick
-//
-//  Created by Мария Анисович on 01.09.2024.
-//
+
 
 import UIKit
 

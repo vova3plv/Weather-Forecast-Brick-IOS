@@ -1,9 +1,4 @@
-//
-//  ShadowedGradientButton.swift
-//  weather-forecast-brick
-//
-//  Created by Мария Анисович on 09.08.2024.
-//
+
 
 import UIKit
 

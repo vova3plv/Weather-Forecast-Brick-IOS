@@ -1,9 +1,4 @@
-//
-//  WeatherForecastBrickTests.swift
-//  WeatherForecastBrickTests
-//
-//  Created by Мария Анисович on 13.09.2024.
-//
+
 
 import SnapshotTesting
 import XCTest

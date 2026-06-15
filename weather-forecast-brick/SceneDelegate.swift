@@ -1,9 +1,4 @@
-//
-//  SceneDelegate.swift
-//  weather-forecast-brick
-//
-//  Created by Мария Анисович on 07.08.2024.
-//
+
 
 import UIKit
 

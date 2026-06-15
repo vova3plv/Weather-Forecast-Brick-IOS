@@ -1,9 +1,4 @@
-//
-//  InfoAlertViewController.swift
-//  weather-forecast-brick
-//
-//  Created by Мария Анисович on 22.08.2024.
-//
+
 
 import UIKit
 

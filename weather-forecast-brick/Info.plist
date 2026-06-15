@@ -15,7 +15,7 @@
 		<string>Ubuntu-Bold.ttf</string>
 	</array>
 	<key>WEATHER_API_KEY</key>
-	<string>$(WEATHER_API_KEY)</string>
+	<string>aba10defe0fc0cf063e7a2f51890a42a</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

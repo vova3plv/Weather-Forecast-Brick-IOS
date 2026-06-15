@@ -1,9 +1,4 @@
-//
-//  InfoLabel.swift
-//  weather-forecast-brick
-//
-//  Created by Мария Анисович on 23.08.2024.
-//
+
 
 import UIKit
 
